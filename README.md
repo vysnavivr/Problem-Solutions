@@ -19,3 +19,19 @@ O(n)
 ##### Space Complexity:
 O(min(n, m)), where `n` is the length of the string and `m` is the size of the character set.
 
+### Day 2: Merge Alternately
+**Problem**: [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately)
+
+**Solution**:  
+This problem is solved using a simple iteration technique. Characters from both strings are added alternately using a loop. If one string is longer, the remaining characters are appended to the result after the loop completes.
+
+**Code**:  
+You can view the complete Java solution [here](https://github.com/vysnavivr/Problem-Solutions/blob/main/JavaSolutions/MergeAlternately.java).
+
+**Time Complexity**:  
+O(n), where n is the length of the longer string.
+
+**Space Complexity**:  
+O(n), due to the usage of `StringBuilder` to build the result string.
+
+
