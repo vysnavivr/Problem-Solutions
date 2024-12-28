@@ -34,6 +34,7 @@ O(n), where n is the length of the longer string.
 ##### Space Complexity:  
 O(n), due to the usage of `StringBuilder` to build the result string.
 
+
 -  **Problem**: Second largest. [GeeksforGeeks Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
 
 ##### Solution:  
