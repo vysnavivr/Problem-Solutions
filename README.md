@@ -35,6 +35,8 @@ O(n), where n is the length of the longer string.
 O(n), due to the usage of `StringBuilder` to build the result string.
 
 
+---
+
 -  **Problem**: Second largest. [GeeksforGeeks Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
 
 ##### Solution:  
@@ -52,4 +54,47 @@ After the loop completes, if `max_2` is still `Integer.MIN_VALUE`, it means ther
 
 ##### Space Complexity:  
   O(1), since we only use two variables (`max_1` and `max_2`) to track the largest and second largest values, resulting in constant space usage.
+
+  ### Day 3:  
+
+- **Problem**: Can Place Flowers. [LeetCode Link](https://leetcode.com/problems/can-place-flowers)  
+
+##### Solution:  
+This problem is solved by iterating through the `flowerbed` array and checking for valid empty spots where flowers can be planted without violating the adjacent-flowers rule. For each position:  
+1. If the current position is `0` and both neighbors (if they exist) are also `0`, place a flower by setting it to `1`.  
+2. Decrement the required number of flowers to be placed (`n`).  
+3. If `n` reaches `0` during the iteration, return `true`.  
+
+If the loop completes and `n` is still greater than `0`, return `false`.  
+
+##### Code:  
+You can view the complete Java solution [here](https://github.com/vysnavivr/Problem-Solutions/blob/main/JavaSolutions/LeetCode/CanPlaceFlowers.java).  
+
+##### Time Complexity:  
+O(n), where n is the length of the `flowerbed` array.  
+
+##### Space Complexity:  
+O(1), as the solution modifies the input array in place without using additional space.  
+
+---  
+
+- **Problem**: Move All Zeros to End (In-Place). [GeeksforGeeks Link](https://practice.geeksforgeeks.org/problems/move-all-zeros-to-end-in-place)  
+
+##### Solution:  
+This problem is solved using a two-pointer technique:  
+1. Traverse the array with a pointer `i` to find all non-zero elements.  
+2. Maintain another pointer `j` that tracks the position where the next non-zero element should be placed.  
+3. For every non-zero element encountered at `i`, swap the values at `i` and `j`, then increment `j`.  
+
+After the iteration, all non-zero elements are at the beginning of the array, and the remaining elements are zeros.  
+
+##### Code:  
+You can view the complete Java solution [here](https://github.com/vysnavivr/Problem-Solutions/blob/main/JavaSolutions/GeeksforGeeks/MoveAllZerosToEnd.java).  
+
+##### Time Complexity:  
+O(n), where n is the length of the array.  
+
+##### Space Complexity:  
+O(1), as the solution modifies the input array in place without using additional space.  
+
 
