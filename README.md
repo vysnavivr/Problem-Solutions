@@ -97,4 +97,47 @@ O(n), where n is the length of the array.
 ##### Space Complexity:  
 O(1), as the solution modifies the input array in place without using additional space.  
 
+### Day 4:  
+
+- **Problem**: GCD of Strings. [LeetCode Link](https://leetcode.com/problems/greatest-common-divisor-of-strings)  
+
+##### Solution:  
+This problem is solved recursively using the following approach:  
+1. Identify the larger string and the smaller string.  
+2. If the larger string does not start with the smaller string, return an empty string since no common divisor exists.  
+3. If both strings are equal, the smaller string is the GCD.  
+4. Otherwise, recursively calculate the GCD by removing the smaller string from the beginning of the larger string.  
+
+##### Code:  
+You can view the complete Java solution [here](https://github.com/vysnavivr/Problem-Solutions/blob/main/JavaSolutions/LeetCode/GCDOfStrings.java).  
+
+##### Time Complexity:  
+O(n), where n is the length of the larger string.  
+
+##### Space Complexity:  
+O(n), due to the recursive calls.  
+
+---  
+
+- **Problem**: Rotate an Array. [GeeksforGeeks Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/rotate-array-by-n-elements-1587115621)  
+
+##### Solution:  
+This problem is solved using the reverse method:  
+1. Calculate the effective number of rotations needed using `d = d % n`.  
+2. Reverse the first `d` elements of the array.  
+3. Reverse the remaining `n - d` elements.  
+4. Reverse the entire array to achieve the final rotated result.  
+
+This approach is efficient and operates in-place.  
+
+##### Code:  
+You can view the complete Java solution [here](https://github.com/vysnavivr/Problem-Solutions/blob/main/JavaSolutions/GeeksforGeeks/RotateArrayInPlace.java).  
+
+##### Time Complexity:  
+O(n), where n is the size of the array.  
+
+##### Space Complexity:  
+O(1), as the solution modifies the input array in place without using additional space.  
+
+
 
